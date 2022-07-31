@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "wouter";
+import { Route, Link } from "wouter";
 import "./App.css";
 import ListOfGifs from "./components/ListOfGifs";
 
@@ -12,9 +12,9 @@ function App() {
           component={ListOfGifs}
         />
         <h1>Gifeate</h1>
-        <a href="/gif/argentina">Gifs de Argentina</a>
-        <a href="/gif/red+panda">Gifs de panda rojo</a>
-        <a href="/gif/fast+and+furious">Gifs de rápido y furioso</a>
+        <Link to="/gif/argentina">Gifs de Argentina</Link>
+        <Link to="/gif/red+panda">Gifs de panda rojo</Link>
+        <Link to="/gif/fast+and+furious">Gifs de rápido y furioso</Link>
       </section>
     </div>
   );
